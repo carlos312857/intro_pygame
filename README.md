@@ -155,3 +155,28 @@ while True:
     if event.type == pygame.QUIT:
         break
 ```
+Explicación del código:
+
+1. Inicialización: Se inicializa Pygame con pygame.init() y se configura la ventana.
+
+- Sprites:
+
+. Jugador: Se mueve con las teclas de dirección.
+. Enemigo: Es un objeto estático que tiene una posición fija.
+
+2. Grupo de sprites: Los sprites se agrupan en pygame.sprite.Group() para actualizarlos y dibujarlos fácilmente.
+
+3. Colisiones: pygame.sprite.spritecollideany() detecta si el jugador colisiona con el enemigo.
+
+4. Bucle de juego: En el bucle principal, se actualizan los sprites y se dibujan, además de manejar eventos como el cierre de la ventana.
+
+
+Para correr el archivo:
+
+1. Copia el código y pégalo en un archivo llamado ```ejemplo_sprite.py```.
+
+2. Abre una terminal y navega a la carpeta donde guardaste el archivo.
+
+3. Ejecuta el archivo con:
+
+```python ejemplo_sprite.py```
